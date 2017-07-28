@@ -11,7 +11,7 @@ Second, it includes the <b>DogStatsD</b> service, an implementation of the Stats
 Finally, the <b>forwarder</b> combines all information gathered by the collector and DogStatsD and sends it on to Datadog.
 </p>
 <br><br>
-Host and tags on Host Map page
+Host map details showing host tags, including "#exercise" and "#test."
 <img src='img/hostsAndTags.jpg'>
 
 <h1>Level Two</h1>
@@ -25,14 +25,15 @@ On a TimeBoard, graphs are all anchored to the same time span and provide data a
 <p>
 ScreenBoards can include the same time-based metric graphs, but are more customizable and can include various other widgets that can provide a more complete picture of a monitored system. These range from basic note fields and images to a system event streamer to an iFrame that can display information from outside sources. Unlike TimeBoards, individual elements of a ScreenBoard cannot be shared alone; the full dashboard can be shared as read-only. This is great for displaying a live, high-level view of a system’s various components.
 </p>
-<br><br>
-TK
-Snapshot of test.support.random
+Snapshot of test.support.random graph with annotation box and comment directed with @notification.
+<br><br><img src='img/testAnnotation.jpg'>
 <br><br>
 <h1>Level Three</h1>
-TK
-Monitor alert email
-<br><br>
-TK
-Scheduled downtime email
-<br><br>
+Monitor alert set-up for test.support.random. Alert is set as a Multi Alert to trigger for all Hosts, current and future.
+<img src='img/testMonitor.jpg'>
+<br>
+Success! The monitor was triggered and forwarded an alert to my email.
+<img src='img/triggerAlert.jpg'>
+<br>
+Set-up for the downtime for this alert to keep it quiet from 7:00pm to 9:00am so I can get some sleep.
+<img src='img/monitorDowntime.jpg'>
